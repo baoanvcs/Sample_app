@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title><%=  yield(:title) %> | <%= t "layouts.application.page_title" %></title>
+     <title>SampleApp</title>
+    <title><%= yield(:title) %> | <%= t "layouts.application.page_title" %></title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
     <%= stylesheet_link_tag "application", media: "all", "data-turbolinks-track": "reload" %>
