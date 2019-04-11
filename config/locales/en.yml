@@ -1,8 +1,10 @@
 en:
-   header:
+  header:
     home: "Home"
     help: "Help"
     login: "Log in"
+    english: "English"
+    vietnam: "Vietnam"
   footer:
     content_html: 'The <a href="https://www.railstutorial.org/">Ruby on Rails Tutorial</a>
     by <a href="http://www.michaelhartl.com/">Michael Hartl</a>'
@@ -49,3 +51,8 @@ en:
     application:
       page_title: " Ruby on Rails Tutorial Sample App"
       name: "Sample App"
+  error:
+    form_has_errors_html: "The form contains %{string}."
+    error: "error"
+    not_found: "Not found"
+    user_not_found: "User not found."
