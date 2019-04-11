@@ -3,6 +3,11 @@ vi:
     home: "Trang chủ"
     help: "Trợ giúp"
     login: "Đăng nhập"
+    user: "Người dùng"
+    profile: "Hồ sơ"
+    setting: "Cài đặt"
+    logout: "Đăng xuất"
+    account: "Account"
     english: "Tieng Anh"
     vietnam: "Tieng Viet"
   footer:
@@ -33,9 +38,16 @@ vi:
       new:
         title: "Đăng Ký"
         content: "Đây là trang đăng ký cho người sử dụng mới"
-  layouts:
+        success_ac: "Chào mừng bạn đến với Sample App!"
+        fail_ac: "Tạo tài khoản không thành công"
   error:
     form_has_errors_html: "Biểu mẫu có %{string}"
     error: "lỗi"
     not_found: "Không tìm thấy người dùng"
     user_not_found: "Người dùng không tồn tại."
+sessions:
+    login: "Đăng nhập"
+    new_user: "Người sử dụng mới?"
+    signup: "Đăng nhập ngay!"
+    error: "Email/password không so khớp"
+    success: "Đăng nhập thành công"
