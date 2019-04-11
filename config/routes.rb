@@ -1,3 +1,9 @@
-Rails.application.routes.draw do
-  # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
+MyApp::Application.routes.draw do
+root :to => 'static_pages#home'
+
+match '/help',    :to => 'static_pages#help'
+match '/about',   :to => 'static_pages#about'
+match '/contact', :to =>'static_pages#contact'
+
+
 end
