@@ -1,4 +1,6 @@
 class ApplicationController < ActionController::Base
+  protect_from_forgery with: :exception
+  include SessionsHelper
   before_action :set_locale
 
   private
@@ -11,5 +13,10 @@ class ApplicationController < ActionController::Base
     {locale: I18n.locale}
   end
 
-  def contact; end
+  def logged_in_user
+    return if logged_in?
+    store_location
+    flash[:danger] = t("static_pages.users.new.login_require")
+    redirect_to login_url
+  end
 end
